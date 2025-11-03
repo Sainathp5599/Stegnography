@@ -1,0 +1,28 @@
+/************************************************************************************
+ * Project Title   : Steganography using LSB Technique (BMP Image Encoding & Decoding)
+ * Author          : Sainath M. Patil
+ * City            : Latur, Maharashtra, India
+ * Date            : 03 / 11 / 2025
+ * 
+ * Description     :
+ * This project implements Image Steganography using the Least Significant Bit (LSB)
+ * technique in the C programming language. It allows users to hide (encode) a secret
+ * file inside a 24-bit BMP image and later extract (decode) it safely, without any
+ * visible changes to the image.
+ * 
+ * The program supports two main operations:
+ *   1. Encoding  - Hides a secret file (like .txt, .c, .h, .sh) inside a BMP image.
+ *   2. Decoding  - Extracts the hidden file from the encoded BMP image.
+ * 
+ * The system ensures proper file validation, sufficient image capacity, and integrity
+ * verification using a magic string. It demonstrates modular C programming concepts
+ * through separate files for encoding, decoding, and data type management.
+ * 
+ * Compilation Command :
+ *      gcc main.c encode.c decode.c -o steg
+ * 
+ * Usage :
+ *      Encoding : ./steg -e <source_image.bmp> <secret_file.txt> [output_image.bmp]
+ *      Decoding : ./steg -d <stego_image.bmp> [output_file_name]
+ * 
+ ************************************************************************************/
